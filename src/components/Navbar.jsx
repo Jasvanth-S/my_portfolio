@@ -26,6 +26,7 @@ const Navbar = () => {
         { name: 'Home', to: 'hero' },
         { name: 'About', to: 'about' },
         { name: 'Skills', to: 'skills' },
+        { name: 'Experience', to: 'experience' },
         { name: 'Projects', to: 'projects' },
         { name: 'Contact', to: 'contact' },
     ];
@@ -35,7 +36,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
                 <Link to="hero" smooth={true} duration={500} className="cursor-pointer text-2xl font-bold text-primary">
-                    {siteData.name}<span className="text-gray-900 dark:text-[#E0E0E0]">.</span>
+                    {siteData.name}
                 </Link>
 
                 {/* Desktop Menu */}
