@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CursorTrail from './components/CursorTrail';
+import CustomCursor from './components/CustomCursor';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
@@ -23,6 +25,8 @@ function App() {
 
   return (
     <div className="min-h-screen font-sans">
+      <CursorTrail />
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />

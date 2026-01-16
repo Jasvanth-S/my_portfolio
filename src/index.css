@@ -40,3 +40,24 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-gray-300 rounded-full hover:bg-primary/50 transition-colors;
 }
+
+/* Floating Particles Animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(var(--move-x), calc(var(--move-y) * 0.5));
+  }
+
+  50% {
+    transform: translate(calc(var(--move-x) * 0.5), var(--move-y));
+  }
+
+  75% {
+    transform: translate(calc(var(--move-x) * -0.5), calc(var(--move-y) * 0.8));
+  }
+}
