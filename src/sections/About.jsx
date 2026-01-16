@@ -32,8 +32,7 @@ const About = () => {
                             {siteData.bio}
                         </p>
                         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                            I am dedicated to writing clean, efficient code and building user-centric solutions.
-                            Always eager to learn new technologies and improve my skills effectively.
+                            I focus on transforming data into actionable insights, writing clean and scalable code and delivering user-centric AI solutions. I continuously strengthen my analytical thinking and AI skills through real-world projects and experimentation.
                         </p>
 
                         {/* CV Download Button with Dropdown */}

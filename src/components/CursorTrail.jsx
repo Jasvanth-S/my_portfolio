@@ -86,7 +86,21 @@ const CursorTrail = () => {
 
         // Create particles
         const createParticles = () => {
-            const particleCount = 220; // Increased for professional density
+            // Calculate particle count based on viewport size
+            const width = window.innerWidth;
+            let particleCount;
+
+            if (width >= 1024) {
+                // Desktop: 220 particles
+                particleCount = 220;
+            } else if (width >= 768) {
+                // Tablet: 120 particles
+                particleCount = 120;
+            } else {
+                // Mobile: 60 particles
+                particleCount = 60;
+            }
+
             const isDark = document.documentElement.classList.contains('dark');
 
             for (let i = 0; i < particleCount; i++) {

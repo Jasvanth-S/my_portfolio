@@ -28,7 +28,7 @@ const siteData = {
             description: "Converting raw data into strategic insights through advanced analytics, statistical modeling, and compelling visualizations. Leveraging SQL, Python, PowerBI, and Tableau to drive evidence-based business decisions."
         }
     ],
-    bio: "Passionate AI/ML engineer with expertise in generative AI, agentic systems, and full-stack development. I specialize in creating intelligent solutions using cutting-edge technologies like LangChain, RAG systems, and modern web frameworks.",
+    bio: "Passionate Full-Stack AI Developer and Analyst with hands-on experience in building and evaluating intelligent systems. I specialize in Generative AI, RAG pipelines and Agentic AI workflows, combining data analysis with backend and frontend development using Python, FastAPI, React and modern web frameworks.",
     email: "jasvanth1010@gmail.com",
     socials: [
         { name: "GitHub", url: "https://github.com/Jasvanth-S", icon: <FaGithub /> },
@@ -161,7 +161,15 @@ const siteData = {
     ],
     projects: [
         {
-            title: "Smart_Academic_Assistance ",
+            title: "My_Portfolio",
+            description: "My Personal portfolio showcasing my work in Generative AI, Agentic AI and full-stack development. It highlights projects, skills and experience in AI systems, intelligent agents, data analytics and scalable web applications built with modern technologies.",
+            image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
+            github: "https://github.com/Jasvanth-S/my_portfolio",
+            live: "https://jasvanth-s.github.io/my_portfolio",
+            tags: ["JavaScript", "HTML", "CSS", "React", "Tailwind CSS", "Framer Motion", "FCC", "Git & GitHub", "VS Code", "Google Antigravity", "Prompt Engineering"],
+        },
+        {
+            title: "Smart_Academic_Assistance",
             description: "A production-ready Agentic RAG Telegram Bot with a 'Dual-Brain' architecture. It prioritizes strict answers from your private Google Drive, seamlessly falling back to Llama 3 (Groq) for general knowledge when files are missing. Bridges static docs with dynamic AI.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/Smart_Academic_Assistance",
