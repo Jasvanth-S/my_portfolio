@@ -37,9 +37,9 @@ const siteData = {
     ],
     // Profile photo path - update this when you add your photo
     profilePhoto: "/assets/profile.png", // or "/assets/profile.jpg"
-    // CV files for each role - update paths as needed
+    // CV files for each role - Add your actual PDF files to public/assets/cv/
     cvFiles: [
-        { role: "Full-Stack AI Developer", file: "/assets/cv/Jasvanth_CV_Generative_AI_Engineer.pdf" },
+        { role: "Full-Stack AI Developer", file: "/assets/cv/Jasvanth_CV_Full_Stack_AI_Developer.pdf" },
         { role: "AI/ML Engineer", file: "/assets/cv/Jasvanth_CV_AI_ML_Engineer.pdf" },
         { role: "Agentic AI Engineer", file: "/assets/cv/Jasvanth_CV_Agentic_AI_Engineer.pdf" },
         { role: "FARM Stack Developer", file: "/assets/cv/Jasvanth_CV_FARM_Stack_Developer.pdf" },
@@ -125,55 +125,55 @@ const siteData = {
 
     ],
     skills: [
-  // Core Programming & Web
-  { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Tailwind CSS", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+        // Core Programming & Web
+        { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Tailwind CSS", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
 
-  // Backend & APIs
-  { name: "FastAPI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
-  { name: "Flask", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+        // Backend & APIs
+        { name: "FastAPI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+        { name: "Flask", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
 
-  // AI / ML Core
-  { name: "Machine Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
-  { name: "Deep Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
-  { name: "NLP", iconUrl: "https://th.bing.com/th/id/R.a87dd1adc93a0466fcbeb90d2424b401?rik=IfL%2fT6VpB6hcog&riu=http%3a%2f%2fprominentpixel.com%2fassets%2fimages%2flogos%2fSpaCy_logo.png&ehk=DZO8DX8lRs2gqrowhwyO3YUOAtu0Pfr0N6JC5TZMfZg%3d&risl=&pid=ImgRaw&r=0" },
-  { name: "OpenCV", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+        // AI / ML Core
+        { name: "Machine Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
+        { name: "Deep Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
+        { name: "NLP", iconUrl: "https://th.bing.com/th/id/R.a87dd1adc93a0466fcbeb90d2424b401?rik=IfL%2fT6VpB6hcog&riu=http%3a%2f%2fprominentpixel.com%2fassets%2fimages%2flogos%2fSpaCy_logo.png&ehk=DZO8DX8lRs2gqrowhwyO3YUOAtu0Pfr0N6JC5TZMfZg%3d&risl=&pid=ImgRaw&r=0" },
+        { name: "OpenCV", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
 
-  // Generative AI & LLMs
-  { name: "Generative AI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
-  { name: "LLM", iconUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
-  { name: "Prompt Engineering", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
+        // Generative AI & LLMs
+        { name: "Generative AI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
+        { name: "LLM", iconUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
+        { name: "Prompt Engineering", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
 
-  // Agentic AI & Frameworks
-  { name: "Agentic AI", iconUrl: "https://cdn0.iconfinder.com/data/icons/ai-agent/512/ai-intelligent-agent-robot-03-256.png" },
-  { name: "LangChain", iconUrl: "https://api.iconify.design/simple-icons:langchain.svg?color=%2300F0FF" },
-  { name: "LangGraph", iconUrl: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langgraph-color.png" },
-  { name: "CrewAI", iconUrl: "https://avatars.githubusercontent.com/u/170677839?s=200&v=4" },
-  { name: "RAG Systems", iconUrl: "https://api.iconify.design/mdi:database-search.svg?color=%2300F0FF" },
+        // Agentic AI & Frameworks
+        { name: "Agentic AI", iconUrl: "https://cdn0.iconfinder.com/data/icons/ai-agent/512/ai-intelligent-agent-robot-03-256.png" },
+        { name: "LangChain", iconUrl: "https://api.iconify.design/simple-icons:langchain.svg?color=%2300F0FF" },
+        { name: "LangGraph", iconUrl: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langgraph-color.png" },
+        { name: "CrewAI", iconUrl: "https://avatars.githubusercontent.com/u/170677839?s=200&v=4" },
+        { name: "RAG Systems", iconUrl: "https://api.iconify.design/mdi:database-search.svg?color=%2300F0FF" },
 
-  // Data Analysis & Visualization
-  { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
-  { name: "NumPy", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
-  { name: "SciPy", iconUrl: "https://api.iconify.design/simple-icons:scipy.svg?color=%230054A6" },
-  { name: "Matplotlib", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" },
-  { name: "Seaborn", iconUrl: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
+        // Data Analysis & Visualization
+        { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
+        { name: "NumPy", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
+        { name: "SciPy", iconUrl: "https://api.iconify.design/simple-icons:scipy.svg?color=%230054A6" },
+        { name: "Matplotlib", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" },
+        { name: "Seaborn", iconUrl: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
 
-  // Databases & BI
-  { name: "SQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
-  { name: "MongoDB", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "PostgreSQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-  { name: "Power BI", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
-  { name: "Tableau", iconUrl: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg" },
+        // Databases & BI
+        { name: "SQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
+        { name: "MongoDB", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { name: "PostgreSQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        { name: "Power BI", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+        { name: "Tableau", iconUrl: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg" },
 
-  // DevOps & Tools
-  { name: "Git & GitHub", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  { name: "VS Code", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  { name: "Jupyter Notebook", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
-  { name: "n8n", iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png" },
-],
+        // DevOps & Tools
+        { name: "Git & GitHub", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { name: "VS Code", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { name: "Jupyter Notebook", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
+        { name: "n8n", iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png" },
+    ],
     projects: [
         {
             title: "My_Portfolio",
@@ -196,7 +196,7 @@ const siteData = {
             description: "A machine learning project for heart disease prediction using a Random Forest Classifier. This repository contains a Jupyter Notebook that details the full ML pipeline: data cleaning, EDA, model training, evaluation, and feature importance analysis. The project demonstrates how to save and use the trained model for making new predictions.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/Heart_Disease_Prediction",
-            
+
             tags: ["Python", "Machine Learning", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Logistic Regression", "Random Forest Classifier", "Jupyter Notebook", "EDA", "Feature Importance", "Git & GitHub"],
         },
         {
@@ -212,7 +212,7 @@ const siteData = {
             description: "The Love Calculator Web App is a simple and entertaining application built. It allows users to enter two names and generates a fun and playful love compatibility percentage. The goal of this app is to provide a light-hearted user experience while demonstrating how backend logic and frontend design can work together in a web application.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/Love_Calculator",
-        
+
             tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "React", "Mailtolink", "Git & GitHub"],
         },
         {
@@ -220,7 +220,7 @@ const siteData = {
             description: "The Trading Prediction App is an interactive web application that uses machine learning to forecast short-term stock and cryptocurrency price movements. Built with Streamlit, Scikit-Learn, and Yahoo Finance (yfinance), it provides a simple yet powerful platform for exploring how AI can support basic trading decisions.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/Trading_Prediction",
-            
+
             tags: ["Python", "AI/ML", "FastAPI", "Streamlit", "LangChain", "Yahoo Finance", "SQlite3", "SQL", "DerivAPI", "Machine Learning", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Regression", "Feature Selection", "Model Evaluation", "Git & GitHub"],
         },
     ],

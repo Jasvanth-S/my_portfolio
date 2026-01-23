@@ -51,7 +51,7 @@ const About = () => {
                                     {siteData.cvFiles.map((cv, index) => (
                                         <a
                                             key={index}
-                                            href={cv.file}
+                                            href={`${process.env.PUBLIC_URL}${cv.file}`}
                                             download
                                             className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors first:rounded-t-lg last:rounded-b-lg"
                                             onClick={() => setShowCVMenu(false)}
