@@ -138,9 +138,7 @@ const siteData = {
         // AI / ML Core
         { name: "Machine Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
         { name: "Deep Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
-        { name: "NLP", iconUrl: "https://th.bing.com/th/id/R.a87dd1adc93a0466fcbeb90d2424b401?rik=IfL%2fT6VpB6hcog&riu=http%3a%2f%2fprominentpixel.com%2fassets%2fimages%2flogos%2fSpaCy_logo.png&ehk=DZO8DX8lRs2gqrowhwyO3YUOAtu0Pfr0N6JC5TZMfZg%3d&risl=&pid=ImgRaw&r=0" },
-        { name: "OpenCV", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
-
+        
         // Generative AI & LLMs
         { name: "Generative AI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
         { name: "LLM", iconUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
@@ -156,7 +154,6 @@ const siteData = {
         // Data Analysis & Visualization
         { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
         { name: "NumPy", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
-        { name: "SciPy", iconUrl: "https://api.iconify.design/simple-icons:scipy.svg?color=%230054A6" },
         { name: "Matplotlib", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" },
         { name: "Seaborn", iconUrl: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
 
