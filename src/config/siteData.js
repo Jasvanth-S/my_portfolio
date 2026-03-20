@@ -8,11 +8,11 @@ const siteData = {
             description: "Engineering intelligent full-stack applications that seamlessly integrate frontend interfaces with AI-driven backends. Specialized in deploying LLMs, RAG systems, agentic AI pipelines, and analytics engines into scalable web platforms using modern frameworks, APIs, and cloud-native architectures."
         },
         {
-            title: "AI/ML Engineer",
+            title: "AI/ML Developer",
             description: "Building end-to-end machine learning pipelines from data preprocessing to model deployment. Proficient in supervised, unsupervised, and reinforcement learning techniques using PyTorch, TensorFlow, and scikit-learn."
         },
         {
-            title: "Agentic AI Engineer",
+            title: "Agentic AI Developer",
             description: "Creating intelligent autonomous agents with LangChain and CrewAI that can plan, reason, and execute complex multi-step tasks. Specialized in tool-calling, memory systems, and agent orchestration frameworks."
         },
         {
@@ -128,16 +128,18 @@ const siteData = {
         // Core Programming & Web
         { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
         { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { name: "TypeScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Next.js", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
         { name: "Tailwind CSS", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
 
         // Backend & APIs
         { name: "FastAPI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+        { name: "Django", iconUrl: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png" },
         { name: "Flask", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
 
         // AI / ML Core
         { name: "Machine Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
-        { name: "Deep Learning", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
         
         // Generative AI & LLMs
         { name: "Generative AI", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
