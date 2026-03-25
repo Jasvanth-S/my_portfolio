@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import siteData from '../config/siteData';
 import { FaDownload } from 'react-icons/fa';
 
@@ -64,9 +65,9 @@ const About = () => {
                         </div>
 
                         <p className="mt-6">
-                            <a href="#contact" className="text-primary font-semibold hover:underline">
+                            <Link to="/connect" className="text-primary font-semibold hover:underline">
                                 Let's build something together!
-                            </a>
+                            </Link>
                         </p>
                     </div>
                 </div>

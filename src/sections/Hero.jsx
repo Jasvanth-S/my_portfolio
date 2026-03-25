@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import siteData from '../config/siteData';
 
@@ -51,17 +51,13 @@ const Hero = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                     <Link
-                        to="projects"
-                        smooth={true}
-                        duration={500}
+                        to="/creations"
                         className="px-8 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white dark:hover:text-[#050505] font-semibold text-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
                     >
                         View Work
                     </Link>
                     <Link
-                        to="contact"
-                        smooth={true}
-                        duration={500}
+                        to="/connect"
                         className="px-8 py-3 rounded-full bg-gray-200 dark:bg-[#1E1E1E] text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 font-semibold text-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
                     >
                         Contact Me
