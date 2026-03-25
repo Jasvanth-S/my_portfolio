@@ -147,7 +147,7 @@ const siteData = {
             ],
             description: "Explored advanced techniques in agentic AI and RAG architecture.",
             date: "Jan 2025"
-        },{
+        }, {
             title: "AI Developers Summit",
             location: "Remote",
             images: [
@@ -157,7 +157,7 @@ const siteData = {
             ],
             description: "Explored advanced techniques in agentic AI and RAG architecture.",
             date: "Jan 2025"
-        },{
+        }, {
             title: "AI Developers Summit",
             location: "Remote",
             images: [
@@ -189,20 +189,20 @@ const siteData = {
             category: "Programming Languages",
             skills: [
                 { name: "Python", level: 95, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-                { name: "JavaScript", level: 85, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+                { name: "JavaScript", level: 75, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
                 { name: "TypeScript", level: 70, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
             ]
         },
         {
             category: "AI / Machine Learning",
             skills: [
-                { name: "Machine Learning", level: 90, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
+                { name: "Machine Learning", level: 70, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
                 { name: "Generative AI", level: 85, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
-                { name: "LLMs", level: 85, iconUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
-                { name: "Agentic AI", level: 90, iconUrl: "https://cdn0.iconfinder.com/data/icons/ai-agent/512/ai-intelligent-agent-robot-03-256.png" },
+                { name: "LLMs", level: 75, iconUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
+                { name: "Agentic AI", level: 80, iconUrl: "https://cdn0.iconfinder.com/data/icons/ai-agent/512/ai-intelligent-agent-robot-03-256.png" },
                 { name: "LangChain", level: 80, iconUrl: "https://api.iconify.design/simple-icons:langchain.svg?color=%2300F0FF" },
-                { name: "CrewAI", level: 80, iconUrl: "https://avatars.githubusercontent.com/u/170677839?s=200&v=4" },
-                { name: "RAG Systems", level: 95, iconUrl: "https://api.iconify.design/mdi:database-search.svg?color=%2300F0FF" },
+                { name: "CrewAI", level: 70, iconUrl: "https://avatars.githubusercontent.com/u/170677839?s=200&v=4" },
+                { name: "RAG Systems", level: 75, iconUrl: "https://api.iconify.design/mdi:database-search.svg?color=%2300F0FF" },
             ]
         },
         {
@@ -218,12 +218,12 @@ const siteData = {
         {
             category: "Full Stack Development",
             skills: [
-                { name: "React", level: 85, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-                { name: "Next.js", level: 75, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-                { name: "Tailwind CSS", level: 90, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-                { name: "FastAPI", level: 90, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
-                { name: "Django", level: 80, iconUrl: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png" },
-                { name: "MongoDB", level: 85, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+                { name: "React", level: 65, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+                { name: "Next.js", level: 65, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+                { name: "Tailwind CSS", level: 80, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+                { name: "FastAPI", level: 80, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+                { name: "Django", level: 50, iconUrl: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png" },
+                { name: "MongoDB", level: 75, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
                 { name: "PostgreSQL", level: 65, iconUrl: "https://freepnglogo.com/images/all_img/postgresql-logo-e3e7.png" }
             ]
         },
@@ -231,10 +231,10 @@ const siteData = {
             category: "Tools & Platforms",
             skills: [
                 { name: "Git & GitHub", level: 90, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-                { name: "Docker", level: 75, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-                { name: "VS Code", level: 95, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+                { name: "Docker", level: 55, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+                { name: "VS Code", level: 90, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
                 { name: "Jupyter Notebook", level: 95, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
-                { name: "n8n", level: 80, iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png" },
+                { name: "n8n", level: 40, iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png" },
             ]
         }
     ],
@@ -275,7 +275,90 @@ const siteData = {
             image: "https://media.licdn.com/dms/image/v2/D562DAQHLu_zdtJjyxg/profile-treasury-image-shrink_1280_1280/B56Zf3sQYtHoAQ-/0/1752207264772?e=1774976400&v=beta&t=FJCrhA8NAm2rPGwNXH8hN7qs_eYB2_1nP2G8SxpKhLQ",
             link: "#" // Insert real credential link here
         },
-
+        {
+            name: "AI Tools Master Class",
+            year: "2026",
+            image: "https://drive.google.com/file/d/1JnIc3onZdFbsMZOM258XP2AP1wgYS8Bk/view?usp=sharing",
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Data Analyst Internship Completion",
+            organization: "Besant Technologies",
+            year: "2025",
+            image: "https://media.licdn.com/dms/image/v2/D5622AQHe5atYSN_OtA/feedshare-shrink_2048_1536/B56ZnZCGzpJwAw-/0/1760282833423?e=1776297600&v=beta&t=5Thiy1TE_h05Oug5OgTjooDcaJL4NICPJyou-PHfLDM",
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Green Skills and AI Foundation",
+            organization: "Edunet Foundation - Skil4Future",
+            year: "2024",
+            image: "https://media.licdn.com/dms/image/v2/D5622AQEIsUL9eezkhQ/feedshare-shrink_2048_1536/B56ZfE9KToHoAw-/0/1751356058345?e=1776297600&v=beta&t=u9p7eowQxEthy9e14QYuxhGVHbhn25fFpThiiPVVRc4",
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Full-Stack Master Class",
+            organization: "Noviteh",
+            year: "2025",
+            image: "https://drive.google.com/file/d/1i5C037fqBA34sv9KggI0aBj5-lYT8831/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1i5C037fqBA34sv9KggI0aBj5-lYT8831/view?usp=sharing" // Insert real credential link here
+        },
+        {
+            name: "Power BI Master Class",
+            organization: "OfficeMaster",
+            year: "2025",
+            image: "https://drive.google.com/file/d/1AQh9MMW7woiyYAg4QMqM-6BzT4Sgu3QZ/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1AQh9MMW7woiyYAg4QMqM-6BzT4Sgu3QZ/view?usp=sharing" // Insert real credential link here
+        },
+        {
+            name: "Cyber Secrity",
+            organization: "Naan Mudhalvan - ingage",
+            year: "2025",
+            image: "https://drive.google.com/file/d/1y2j6HkcBYjs0XK_7cTj2_D8Luf6GU056/view?usp=sharing",
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Gen AI Foundation with Copilot",
+            organization: "Microsoft Learning",
+            year: "2025",
+            image: [
+                "https://drive.google.com/file/d/1B66as29K6bnv7ltAFFyuootoohozQ2Vm/view?usp=sharing",
+                "https://drive.google.com/file/d/1-zjv1oY9DyZiWXsOMVykuZ1lsHfFww8Y/view?usp=sharing",
+                "https://drive.google.com/file/d/1l2DqXFNRHEv6-vnujoJaArLQ4SGYRDjk/view?usp=sharing"
+            ],
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Flipkart Project Completion Certificate",
+            organization: "Devtown - [Google, Microsoft, MSME]",
+            year: "2025",
+            image: [
+                "https://drive.google.com/file/d/1_bD0ZfBZcTqK93k0o3inOQKmChgSPrrQ/view?usp=sharing",
+                "https://drive.google.com/file/d/1jcEbRbpLNh76KBotsf9fr2uvzXga8dmC/view?usp=sharing",
+                "https://drive.google.com/file/d/1n_j65mYPxkP2vpkZo_ukwCquKUSpcS5j/view?usp=sharing"
+            ],
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Heart Disease Prediction Project Completion",
+            organization: "Devtown - [Google, Microsoft, MSME]",
+            year: "2025",
+            image: [
+                "https://drive.google.com/file/d/1jlgo9rQKDmaLG6X7yAWX-RH_-ijR0JBh/view?usp=sharing",
+                "https://drive.google.com/file/d/1khRF26Bo1lPTYqQn-tXaolaC7mhN-Su5/view?usp=sharing",
+                "https://drive.google.com/file/d/1g6J7seIwAXACPNF6MKZHjvZ1YfVFm3U9/view?usp=sharing"
+            ],
+            link: "#" // Insert real credential link here
+        },
+        {
+            name: "Course and Internship Completion for Data Science & AI",
+            organization: "Devtown - [Google, Microsoft, MSME]",
+            year: "2025",
+            image: [
+                "https://drive.google.com/file/d/1jr6kyOktoiNI9Gdzw1Bsydor6CEsrrzL/view?usp=sharing",
+                "https://drive.google.com/file/d/1QWVkNVLOfkbu4r40SfOgPCZAPSCcn9NQ/view?usp=sharing"
+            ],
+            link: "#" // Insert real credential link here
+        },
     ],
 
     // ---------------------------------------------------------
@@ -296,7 +379,7 @@ const siteData = {
             title: "Smart_Academic_Assistance",
             description: "A production-ready Agentic RAG Telegram Bot with a 'Dual-Brain' architecture. Prioritizes strict answers from Google Drive, seamlessly falling back to Llama 3 for general knowledge.",
             problemSolved: "Bridges static documentation with dynamic AI to provide instantaneous academic assistance.",
-            technologies: ["Python","FastAPI", "LangChain", "CrewAI", "RAG", "Docker", "Llama 3","Groq Console", "Telegram Bot"],
+            technologies: ["Python", "FastAPI", "LangChain", "CrewAI", "RAG", "Docker", "Llama 3", "Groq Console", "Telegram Bot"],
             outcome: "Reduced document lookup time by 80% with real-time conversational interface.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/Smart_Academic_Assistance",
@@ -306,7 +389,7 @@ const siteData = {
             title: "EasyML",
             description: "End-to-end web app that lets you explore tabular data, clean it, choose ML models, visualize results, and run real-time predictions without notebooks.",
             problemSolved: "Simplifies the complex ML pipeline into an accessible, no-code/low-code interface.",
-            technologies: ["Python","HTML","CSS","JavaScript","Flask", "Scikit-learn", "Pandas","Numpy","Matplotlib", "Seaborn", "Render"],
+            technologies: ["Python", "HTML", "CSS", "JavaScript", "Flask", "Scikit-learn", "Pandas", "Numpy", "Matplotlib", "Seaborn", "Render"],
             outcome: "Empowered non-technical users to generate trained models and insights in minutes.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/EasyML",
@@ -316,7 +399,7 @@ const siteData = {
             title: "Trading_Prediction",
             description: "Interactive web application using machine learning to forecast short-term stock and cryptocurrency movements. Built with Streamlit and Yahoo Finance.",
             problemSolved: "Helps retail investors analyze market trends using predictive AI modeling.",
-            technologies: ["Python","Streamlit", "Scikit-Learn","Pandas","Numpy","Matplotlib", "yfinance", "jupyter Notebook", "Joblib"],
+            technologies: ["Python", "Streamlit", "Scikit-Learn", "Pandas", "Numpy", "Matplotlib", "yfinance", "jupyter Notebook", "Joblib"],
             outcome: "Delivered intuitive visualizations mapping historical data to ML predictions.",
             image: "https://avatars.githubusercontent.com/u/178203878?s=96&v=4",
             github: "https://github.com/Jasvanth-S/Trading_Prediction",
@@ -336,21 +419,51 @@ const siteData = {
 
     professionalEngagements: [
         {
-            client: "Edunet Foundation",
-            summary: "Data Analysis and Visualization Initiative",
-            contribution: "Analyzed datasets and developed interactive Power BI dashboards for educational metrics.",
-            impact: "Improved reporting clarity by 30% and enhanced stakeholder decision-making.",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
-            category: "Data Consulting"
+            client: "3D Print With Sruthi",
+            summary: "End-to-End E-commerce Platform Development",
+            contribution: "Designed and developed a full-stack e-commerce website using Next.js and Tailwind CSS, with role based authentication and integrating Cashfree for secure online payments and seamless checkout experience.",
+            impact: "Enabled the client to establish a scalable online presence, streamline product sales and improve customer conversion rates.",
+            image: "https://drive.google.com/file/d/1GMkOqol79gFsRWDYbz7H2MlDW05M1Fel/view?usp=sharing",
+            link: "https://www.3dprintwithsruthi.in/",
+            category: "Full Stack Development"
+        },
+        {
+            client: "Arjun College of Technology",
+            summary: "Event Management and Registration Platform for Futurix 2026",
+            contribution: "Developed a dynamic event website to showcase event details, department and college information, along with an integrated registration and payment system for seamless participant onboarding.",
+            impact: "Streamlined event promotions and registrations, improving participant engagement and enabling efficient digital management of Futurix 2026.",
+            image: "https://drive.google.com/file/d/1M4sBBsNbVJqSBGlcW3VkUruJw3wqNge1/view?usp=sharing",
+            link: "https://act-blogs.github.io/FuturiX_2026/",
+            category: "Web Development"
+        },
+        {
+            client: "KeyMart Global",
+            summary: "Premium Digital Subscription Retailer, Automated Account Creation and Status Tracking System",
+            contribution: "Developed dedicated account creation and status tracking pages for Adobe and Canva premium subscriptions, integrated with WhatsApp automation to manage and update order status in real time.",
+            impact: "Reduced manual processing, improved operational efficiency and enabled seamless communication and status updates for customers.",
+            image: "https://drive.google.com/file/d/1ZV3LwcEBSBssdBzzFmV5e-YfaW5K3M-_/view?usp=sharing",
+            link: "https://adobe-seller--jasvanth1010.replit.app/",
+            category: "Automation & Web Development"
         }
     ],
 
     research: [
         {
-            title: "Optimized Retrieval-Augmented Generation using Agentic Workflows",
-            conference: "Under Review / Draft",
-            summary: "An exploration into dual-brain architectures comparing standard RAG latency vs Agentic validation techniques.",
-            link: "#"
+            title: "Leveraging Artificial Intelligence and Data Science for Small Business Growth: Opportunities, Challenges and Solutions",
+            conference: "Draft",
+            summary: "Artificial Intelligence and Data Science are increasingly enabling small businesses to enhance operational efficiency, improve decision-making and deliver more personalized customer experiences through accessible and cost-effective technologies. This paper examines how these technologies create competitive advantages, outlines the key challenges in adoption and presents practical solutions and real-world applications that support sustainable growth and innovation in small enterprises.",
+            link: "https://drive.google.com/file/d/12k-N4qII3qFK11TCxP-Q7lX2ojcx-hgE/view?usp=sharing"
+        },
+        {
+            title: "HEALTH GUARDIAN AI: Agentic Wearable Health Orchestration System",
+            conference: "Progression",
+            summary: "Health Guardian AI is an agentic wearable health system that integrates multi-agent coordination, digital twins and federated learning to enable continuous, proactive and privacy-preserving health monitoring. It combines edge, device and cloud intelligence to deliver real-time risk assessment, prioritized alerts and seamless clinical integration, improving decision-making and long-term patient care.",
+            link: "https://drive.google.com/file/d/1LPVpAH4bilmcEWVG_dGABWjdk-Yekzh4/view?usp=sharing"
+        }, {
+            title: "SMARTFIRE AI OPTIMIZER: AI-Based Fire-Station Location Optimization for Enhanced Fire and Rescue Coverage Using Risk-Aware Demand Modelling and Response-Time PredictionHEALTH GUARDIAN AI: Agentic Wearable Health Orchestration System",
+            conference: "National Conference ",
+            summary: " SmartFire AI Optimizer is an AI-driven system that uses GIS-based risk modelling, real-time traffic prediction and optimization algorithms to determine the most effective fire station locations. By integrating multi-source data and agentic AI coordination, it significantly improves emergency response coverage, reducing high-risk unserved areas and enabling faster, data-driven fire and rescue planning.",
+            link: "https://drive.google.com/file/d/1yLgl7fpbYbpo-_Zp5oW5aazyNWnMG94s/view?usp=sharing"
         }
     ],
 

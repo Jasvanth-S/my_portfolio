@@ -2,28 +2,38 @@ import React, { useState, useEffect } from 'react';
 import { FaStar, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import siteData from '../config/siteData';
 
+const formatImageUrl = (url) => {
+    if (!url || typeof url !== 'string') return url;
+    const driveRegex = /drive\.google\.com\/(?:file\/d\/|open\?id=)([-\w]+)/;
+    const match = url.match(driveRegex);
+    if (match && match[1]) {
+        // Use the thumbnail endpoint as it bypasses recent Google hotlink restrictions
+        return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`;
+    }
+    return url;
+};
+
 const HighlightCard = ({ item }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [imgIndex, setImgIndex] = useState(0);
 
+    // Auto-correct if user accidentally used `image: []` instead of `images: []`
+    const imagesArray = item.images || (Array.isArray(item.image) ? item.image : null);
+    const singleImage = !Array.isArray(item.image) ? item.image : null;
+
     useEffect(() => {
         let interval;
-        if (isHovered && item.images && item.images.length > 1) {
+        if (isHovered && imagesArray && imagesArray.length > 1) {
             interval = setInterval(() => {
-                setImgIndex((prev) => (prev + 1) % item.images.length);
-            }, 1200); // Cycle image every 1.2 seconds
-        } else {
-            // Optional: reset to first image slowly, or just leave it where it stopped.
-            // setImgIndex(0); 
+                setImgIndex((prev) => (prev + 1) % imagesArray.length);
+            }, 1800); // 1.8 seconds makes the transition cleaner and easier to view
         }
         return () => clearInterval(interval);
-    }, [isHovered, item.images]);
-
-    const displayImage = item.images ? item.images[imgIndex] : item.image;
+    }, [isHovered, imagesArray]);
 
     return (
         <div
-            className="bg-gray-50 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-2 group flex flex-col"
+            className="bg-gray-50 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 transform group flex flex-col h-full"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => {
                 setIsHovered(false);
@@ -32,28 +42,28 @@ const HighlightCard = ({ item }) => {
         >
             {/* Image Slideshow Area */}
             <div className="relative h-56 overflow-hidden bg-gray-200 dark:bg-[#121212]">
-                {item.images && item.images.map((imgSrc, idx) => (
+                {imagesArray && imagesArray.map((imgSrc, idx) => (
                     <img
                         key={idx}
-                        src={imgSrc}
+                        src={formatImageUrl(imgSrc)}
                         alt={item.title}
-                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out group-hover:scale-105 ${idx === imgIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:scale-105 ${idx === imgIndex ? 'opacity-100' : 'opacity-0'}`}
                     />
                 ))}
                 
                 {/* Fallback for single image legacy data */}
-                {!item.images && (
+                {!imagesArray && singleImage && (
                     <img
-                        src={item.image}
+                        src={formatImageUrl(singleImage)}
                         alt={item.title}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                 )}
 
                 {/* Slideshow Indicators (Dots) */}
-                {item.images && item.images.length > 1 && (
+                {imagesArray && imagesArray.length > 1 && (
                     <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        {item.images.map((_, i) => (
+                        {imagesArray.map((_, i) => (
                             <div 
                                 key={i} 
                                 className={`h-1.5 rounded-full transition-all duration-300 shadow-sm ${i === imgIndex ? 'w-5 bg-primary' : 'w-2 bg-white/70 backdrop-blur-sm'}`}
@@ -93,12 +103,40 @@ const HighlightCard = ({ item }) => {
 
 const Highlights = () => {
     const scrollContainerRef = React.useRef(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const handleScroll = () => {
+        if (!scrollContainerRef.current) return;
+        const container = scrollContainerRef.current;
+        const centerParams = container.scrollLeft + container.clientWidth / 2;
+        
+        let closestIndex = 0;
+        let minDiff = Infinity;
+
+        Array.from(container.children).forEach((child, i) => {
+            const childCenter = child.offsetLeft + child.clientWidth / 2;
+            const diff = Math.abs(childCenter - centerParams);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestIndex = i;
+            }
+        });
+
+        if (activeIndex !== closestIndex) {
+            setActiveIndex(closestIndex);
+        }
+    };
+
+    // Calculate initial active index when mounted
+    useEffect(() => {
+        handleScroll();
+    }, []);
 
     const scroll = (direction) => {
         if (scrollContainerRef.current) {
             const { current } = scrollContainerRef;
-            // Scroll by slightly less than the full width to show context
-            const scrollAmount = direction === 'left' ? -current.offsetWidth * 0.8 : current.offsetWidth * 0.8;
+            const cardWidth = current.children[0].clientWidth + 24; // 24 is the layout gap
+            const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
             current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         }
     };
@@ -114,23 +152,23 @@ const Highlights = () => {
                     Professional <span className="text-primary">Highlights</span>
                 </h2>
 
-                <div className="relative max-w-6xl mx-auto">
+                <div className="relative w-full overflow-visible">
                     {/* Navigation Buttons */}
-                    {siteData.highlights.length > 2 && (
+                    {siteData.highlights.length > 1 && (
                         <>
                             <button 
                                 onClick={() => scroll('left')}
-                                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-10 bg-white dark:bg-[#1E1E1E] text-primary p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 hover:scale-110 transition-transform hidden sm:block"
+                                className="absolute left-0 top-1/2 -translate-y-1/2 md:translate-x-4 lg:-translate-x-12 z-30 bg-white dark:bg-[#1E1E1E] text-primary p-3 xl:p-4 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 hover:scale-110 hover:bg-primary hover:text-white transition-all hidden sm:flex"
                                 aria-label="Scroll Left"
                             >
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7"/></svg>
+                                <svg className="w-5 h-5 xl:w-6 xl:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/></svg>
                             </button>
                             <button 
                                 onClick={() => scroll('right')}
-                                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 z-10 bg-white dark:bg-[#1E1E1E] text-primary p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 hover:scale-110 transition-transform hidden sm:block"
+                                className="absolute right-0 top-1/2 -translate-y-1/2 md:-translate-x-4 lg:translate-x-12 z-30 bg-white dark:bg-[#1E1E1E] text-primary p-3 xl:p-4 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 hover:scale-110 hover:bg-primary hover:text-white transition-all hidden sm:flex"
                                 aria-label="Scroll Right"
                             >
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                                <svg className="w-5 h-5 xl:w-6 xl:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                             </button>
                         </>
                     )}
@@ -138,12 +176,23 @@ const Highlights = () => {
                     {/* Scroll Container */}
                     <div 
                         ref={scrollContainerRef}
-                        className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scroll"
+                        onScroll={handleScroll}
+                        className="flex overflow-x-auto gap-6 sm:gap-12 pb-16 pt-8 px-8 md:px-[15%] snap-x snap-mandatory hide-scroll items-center"
                     >
                         {siteData.highlights.map((item, index) => (
                             <div 
                                 key={index} 
-                                className="flex-none w-[90%] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-center sm:snap-start"
+                                className={`flex-none w-[90%] sm:w-[400px] lg:w-[450px] xl:w-[500px] snap-center transition-all duration-500 ease-out z-20 ${
+                                    index === activeIndex 
+                                    ? 'scale-105 opacity-100 shadow-2xl relative' 
+                                    : 'scale-90 opacity-60 hover:opacity-80 cursor-pointer pointer-events-auto'
+                                }`}
+                                onClick={() => {
+                                    // Optional: Click lateral card to focus it
+                                    if (index !== activeIndex && scrollContainerRef.current) {
+                                        scrollContainerRef.current.children[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                                    }
+                                }}
                             >
                                 <HighlightCard item={item} />
                             </div>
