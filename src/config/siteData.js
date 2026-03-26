@@ -459,21 +459,36 @@ const siteData = {
             conference: "Progression",
             summary: "Health Guardian AI is an agentic wearable health system that integrates multi-agent coordination, digital twins and federated learning to enable continuous, proactive and privacy-preserving health monitoring. It combines edge, device and cloud intelligence to deliver real-time risk assessment, prioritized alerts and seamless clinical integration, improving decision-making and long-term patient care.",
             link: "https://drive.google.com/file/d/1LPVpAH4bilmcEWVG_dGABWjdk-Yekzh4/view?usp=sharing"
-        }, {
+        }, 
+        {
             title: "SMARTFIRE AI OPTIMIZER: AI-Based Fire-Station Location Optimization for Enhanced Fire and Rescue Coverage Using Risk-Aware Demand Modelling and Response-Time PredictionHEALTH GUARDIAN AI: Agentic Wearable Health Orchestration System",
-            conference: "National Conference ",
+            conference: "National Conference - TNFS",
             summary: " SmartFire AI Optimizer is an AI-driven system that uses GIS-based risk modelling, real-time traffic prediction and optimization algorithms to determine the most effective fire station locations. By integrating multi-source data and agentic AI coordination, it significantly improves emergency response coverage, reducing high-risk unserved areas and enabling faster, data-driven fire and rescue planning.",
             link: "https://drive.google.com/file/d/1yLgl7fpbYbpo-_Zp5oW5aazyNWnMG94s/view?usp=sharing"
+        },
+        {
+            title: "CYBER JARVIS: An Agentic AI Framework for Autonomous Cyber Defense and Self-Healing Infrastructure ",
+            conference: "Draft",
+            summary: "Cyber Jarvis is an agentic AI-based cybersecurity framework that enables autonomous threat detection, decision-making and response using hybrid AI models and reinforcement learning. It introduces a self-healing, closed-loop defense system that reduces alert fatigue, improves detection accuracy and enables context-aware, adaptive cyber threat mitigation in modern security operations centers.",
+            link: "https://drive.google.com/file/d/1KL_hHuUBRTzXWonErs9dXT3ascvy32GP/view?usp=sharing"
         }
     ],
 
     presentations: [
+        
         {
-            topic: "The Future of Open Source LLMs",
-            event: "College Tech Fest 2024",
-            focus: "Performance benchmarking of Llama 3 vs proprietary models in real-world applications.",
+            topic: "Student Innovation: Swadeshi Smart Automation",
+            event: "SIH - 2024",
+            focus: "Easy_ML is a user-friendly, resource-efficient platform designed to democratize AI by allowing non-technical users to easily upload data, auto-train models, and gain automated insights.",
             link: "#",
-            image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=600"
+            image: "https://drive.google.com/file/d/1eO1s1ikjQDoVZTJ9X7i15XEvqs4wySRc/view?usp=sharing"
+        },
+        {
+            topic: "Data Science in Industry 4.0",
+            event: "KAHE - Tech-Fest",
+            focus: "Data Science transforms traditional manufacturing into intelligent Industry 4.0 systems by using predictive analytics, AI, and real-time monitoring to optimize production, quality control, and supply chain operations.",
+            link: "#",
+            image: "https://drive.google.com/file/d/1uW9s6GeyzAMa01pJ-KW8AZ2x-2qpgG0o/view?usp=sharing"
         }
     ]
 };

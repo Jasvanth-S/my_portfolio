@@ -1,6 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaChalkboardTeacher, FaExternalLinkAlt } from 'react-icons/fa';
 import siteData from '../config/siteData';
+import PdfScrubber from '../components/PdfScrubber';
+
+const getMediaPreviewUrl = (url) => {
+    if (!url || typeof url !== 'string') return url;
+    
+    // Google drive intercept
+    const driveRegex = /[-\w]{25,}/;
+    const match = url.match(driveRegex);
+    if (url.includes('drive.google.com') && match) {
+        return `https://drive.google.com/thumbnail?id=${match[0]}&sz=w1000`;
+    }
+    
+    return url;
+};
 
 const Presentations = () => {
     const scrollContainerRef = useRef(null);
@@ -30,6 +44,7 @@ const Presentations = () => {
 
     useEffect(() => {
         handleScroll();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const scroll = (direction) => {
@@ -94,23 +109,30 @@ const Presentations = () => {
                             >
                                 <div className="bg-gray-50 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 group flex flex-col h-full">
                                     <div className="relative h-56 overflow-hidden">
-                                        <img
-                                            src={pres.image}
-                                            alt={pres.topic}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                        />
-                                        <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                        
+                                        {pres.link && pres.link.toLowerCase().endsWith('.pdf') ? (
+                                            <PdfScrubber pdfUrl={pres.link} defaultImage={getMediaPreviewUrl(pres.image)} />
+                                        ) : (
+                                            <img
+                                                src={getMediaPreviewUrl(pres.image)}
+                                                alt={pres.topic}
+                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                            />
+                                        )}
+
+                                        <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-30 flex items-center gap-1 shadow-md">
                                             <FaChalkboardTeacher /> {pres.event}
                                         </div>
                                         
-                                        {pres.link && pres.link !== '#' && (
+                                        {((pres.link && pres.link !== '#') || (pres.image && pres.image.includes('drive.google.com'))) && (!pres.link || !pres.link.toLowerCase().endsWith('.pdf')) && (
                                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors z-20 flex items-center justify-center">
-                                                <a href={pres.link} target="_blank" rel="noopener noreferrer" className="opacity-0 group-hover:opacity-100 bg-white dark:bg-[#1E1E1E] text-primary rounded-full p-4 shadow-xl transition-all duration-300 transform scale-50 group-hover:scale-100">
+                                                <a href={pres.link !== '#' ? pres.link : pres.image} target="_blank" rel="noopener noreferrer" className="opacity-0 group-hover:opacity-100 bg-white dark:bg-[#1E1E1E] text-primary rounded-full p-4 shadow-xl transition-all duration-300 transform scale-50 group-hover:scale-100">
                                                     <FaExternalLinkAlt size={20} />
                                                 </a>
                                             </div>
                                         )}
                                     </div>
+
                                     
                                     <div className="p-6 flex flex-col flex-grow">
                                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">

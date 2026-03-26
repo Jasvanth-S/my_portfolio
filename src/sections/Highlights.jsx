@@ -130,6 +130,7 @@ const Highlights = () => {
     // Calculate initial active index when mounted
     useEffect(() => {
         handleScroll();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const scroll = (direction) => {

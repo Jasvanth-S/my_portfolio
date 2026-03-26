@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaMapMarkerAlt, FaCalendarAlt, FaCheckCircle } from 'react-icons/fa';
+import { FaGraduationCap, FaCalendarAlt, FaCheckCircle } from 'react-icons/fa';
 import siteData from '../config/siteData';
 
 const Education = () => {
