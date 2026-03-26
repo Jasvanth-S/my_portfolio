@@ -162,6 +162,15 @@ const siteData = {
             date: "Oct 2025"
         }, 
         {
+            title: "Smart India Hackathon",
+            location: "Internal Presentation",
+            images: [
+                "https://media.licdn.com/dms/image/v2/D5622AQELOGsOM1cLkA/feedshare-shrink_1280/B56ZmMTLDpJkAs-/0/1758995460966?e=1776297600&v=beta&t=h20up5wB_mTEAvZDxmLgEHXJahLL0oNnwwxwZdvYAig",
+               ],
+            description: "Presented “EasyML - Democratizing AI for Everyone” at Smart India Hackathon prelims, showcasing a scalable platform that simplifies AI/ML for non-technical users. Gained hands-on experience in building, deploying and pitching an end-to-end solution, strengthening my focus on accessible and impactful AI innovation.",
+            date: "Oct 2025"
+        },
+        {
             title: "Youth Talk 2025",
             location: "Onsite",
             images: [

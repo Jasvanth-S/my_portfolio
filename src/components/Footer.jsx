@@ -16,7 +16,7 @@ const Footer = () => {
                     &copy; {new Date().getFullYear()} {siteData.name}. All rights reserved.
                 </p>
                 <p className="text-gray-500 dark:text-gray-700 text-xs mt-2">
-                    Built with React & Tailwind CSS
+                    Crafted by Jasvanth.S
                 </p>
             </div>
         </footer>
