@@ -497,7 +497,7 @@ const siteData = {
             link: "https://drive.google.com/file/d/1LPVpAH4bilmcEWVG_dGABWjdk-Yekzh4/view?usp=sharing"
         }, 
         {
-            title: "SMARTFIRE AI OPTIMIZER: AI-Based Fire-Station Location Optimization for Enhanced Fire and Rescue Coverage Using Risk-Aware Demand Modelling and Response-Time PredictionHEALTH GUARDIAN AI: Agentic Wearable Health Orchestration System",
+            title: "SMARTFIRE AI OPTIMIZER: AI-Based Fire-Station Location Optimization for Enhanced Fire and Rescue Coverage Using Risk-Aware Demand Modelling and Response-Time Prediction",
             conference: "National Conference - TNFS",
             summary: " SmartFire AI Optimizer is an AI-driven system that uses GIS-based risk modelling, real-time traffic prediction and optimization algorithms to determine the most effective fire station locations. By integrating multi-source data and agentic AI coordination, it significantly improves emergency response coverage, reducing high-risk unserved areas and enabling faster, data-driven fire and rescue planning.",
             link: "https://drive.google.com/file/d/1yLgl7fpbYbpo-_Zp5oW5aazyNWnMG94s/view?usp=sharing"
