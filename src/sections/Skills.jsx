@@ -58,7 +58,7 @@ const Skills = () => {
                                                     src={skill.iconUrl}
                                                     alt={skill.name}
                                                     loading="lazy"
-                                                    className="w-full h-full object-contain"
+                                                    className={`w-full h-full object-contain ${skill.customClass || ''}`}
                                                     onError={(e) => { e.target.style.display = 'none'; }}
                                                 />
                                             </div>

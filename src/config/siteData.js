@@ -143,7 +143,7 @@ const siteData = {
             ],
             description: "Presented on “The Role of Data Science in Industry 4.0 Manufacturing,” showcasing how AI, IoT and data-driven insights enable predictive maintenance, real-time monitoring and smarter operations. Gained valuable exposure to smart manufacturing innovations and strengthened my vision of integrating AI with industrial transformation.",
             date: "Sep 2025"
-        }, 
+        },
         {
             title: "TN Global Startup Summit 2025",
             location: "Onsite",
@@ -155,13 +155,13 @@ const siteData = {
             ],
             description: "Attended the Tamil Nadu Global Startup Summit 2025, gaining exposure to cutting-edge innovations, startup ecosystems and global entrepreneurial insights. Engaged with industry leaders, expanded my network and strengthened my perspective on building impactful, scalable solutions.",
             date: "Oct 2025"
-        }, 
+        },
         {
             title: "Smart India Hackathon",
             location: "Internal Presentation",
             images: [
                 "https://media.licdn.com/dms/image/v2/D5622AQELOGsOM1cLkA/feedshare-shrink_1280/B56ZmMTLDpJkAs-/0/1758995460966?e=1776297600&v=beta&t=h20up5wB_mTEAvZDxmLgEHXJahLL0oNnwwxwZdvYAig",
-               ],
+            ],
             description: "Presented “EasyML - Democratizing AI for Everyone” at Smart India Hackathon prelims, showcasing a scalable platform that simplifies AI/ML for non-technical users. Gained hands-on experience in building, deploying and pitching an end-to-end solution, strengthening my focus on accessible and impactful AI innovation.",
             date: "Oct 2025"
         },
@@ -216,16 +216,17 @@ const siteData = {
         {
             category: "AI / Machine Learning",
             skills: [
-                { name: "Machine Learning", level: 70, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
-                { name: "Generative AI", level: 85, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
-                { name: "LLMs", level: 75, iconUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
+                { name: "Scikit Learn", level: 70, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
+                { name: "Pytorch", level: 85, iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
+                { name: "LLMs", level: 75, iconUrl: "https://drive.google.com/thumbnail?id=19Ty8w0YQTyxGS6fX0C_rytTHpE-97BHk&sz=w1000", customClass: "scale-[2.3]" },
                 { name: "Agentic AI", level: 80, iconUrl: "https://cdn0.iconfinder.com/data/icons/ai-agent/512/ai-intelligent-agent-robot-03-256.png" },
                 { name: "LangChain", level: 70, iconUrl: "https://api.iconify.design/simple-icons:langchain.svg?color=%2300F0FF" },
                 { name: "LangGraph", level: 70, iconUrl: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langgraph-color.png" },
                 { name: "CrewAI", level: 70, iconUrl: "https://avatars.githubusercontent.com/u/170677839?s=200&v=4" },
                 { name: "RAG Systems", level: 75, iconUrl: "https://api.iconify.design/mdi:database-search.svg?color=%2300F0FF" },
-                { name: "Prompt Engineering", level: 80, iconUrl: "https://static.vecteezy.com/system/resources/previews/022/841/114/original/chatgpt-logo-transparent-background-free-png.png"},
-                
+                { name: "Vector DBs", level: 55, iconUrl: "https://vectorseek.com/wp-content/uploads/2023/09/Pinecone-Icon-Logo-Vector.svg-.png", customClass: "dark:invert" },
+                { name: "Prompt Engineering", level: 80, iconUrl: "https://static.vecteezy.com/system/resources/previews/022/841/114/original/chatgpt-logo-transparent-background-free-png.png" },
+                { name: "Generative AI", level: 85, iconUrl: "https://drive.google.com/thumbnail?id=1sKfzPRCS-VU8EmNtCM__c1r29LXOsoQt&sz=w1000", customClass: "scale-[2.5]"},
             ]
         },
         {
@@ -486,7 +487,7 @@ const siteData = {
             conference: "Progression",
             summary: "Health Guardian AI is an agentic wearable health system that integrates multi-agent coordination, digital twins and federated learning to enable continuous, proactive and privacy-preserving health monitoring. It combines edge, device and cloud intelligence to deliver real-time risk assessment, prioritized alerts and seamless clinical integration, improving decision-making and long-term patient care.",
             link: "https://drive.google.com/file/d/1LPVpAH4bilmcEWVG_dGABWjdk-Yekzh4/view?usp=sharing"
-        }, 
+        },
         {
             title: "SMARTFIRE AI OPTIMIZER: AI-Based Fire-Station Location Optimization for Enhanced Fire and Rescue Coverage Using Risk-Aware Demand Modelling and Response-Time Prediction",
             conference: "National Conference - TNFS",
@@ -502,7 +503,7 @@ const siteData = {
     ],
 
     presentations: [
-        
+
         {
             topic: "Student Innovation: Swadeshi Smart Automation",
             event: "SIH - 2024",
